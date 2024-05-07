@@ -1,0 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Sedan+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Sedan+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Bungee&family=Kode+Mono:wght@400..700&family=Sedan+SC&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
