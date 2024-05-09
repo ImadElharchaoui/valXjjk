@@ -1,31 +1,33 @@
 import React, { useState, useEffect } from 'react';
 
-const MinuteSecondCounter = () => {
+const MinuteSecondCounter = ({ clicked }) => {
   const [seconds, setSeconds] = useState(0);
-
-
+  let timer;
   useEffect(() => {
-    let timer;
-    if (true) {
+    
+    
+    if (clicked) { 
+      setSeconds(0)
       timer = setInterval(() => {
         setSeconds((prevSeconds) => prevSeconds + 1);
       }, 1000);
+    } else {
+      clearInterval(timer); // Clear the timer when 'clicked' is false
     }
 
-    // Clear the interval when the component is unmounted or the timer stops
     return () => {
-      if (timer) {
-        clearInterval(timer);
-      }
+      clearInterval(timer); // Clear the timer when component unmounts
     };
-  }); // Dependency on isRunning to start/stop the timer
+  }, [clicked]); // Depend on 'clicked' to control start/stop
 
   const minutes = Math.floor(seconds / 60); // Calculate minutes
   const remainingSeconds = seconds % 60;   // Calculate remaining seconds
 
   return (
-    <div className="">
-        {`${String(minutes).padStart(2, '0')}:${String(remainingSeconds).padStart(2, '0')}`} {/* 00:00 format */}
+    <div className="text-3xl font-bold">
+      <button>
+        {clicked ?`${String(minutes).padStart(2, '0')}:${String(remainingSeconds).padStart(2, '0')} ` : 'PLAY'} 
+      </button>
     </div>
   );
 };
