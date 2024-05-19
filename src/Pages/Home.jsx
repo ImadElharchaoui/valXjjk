@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from './Navbar'
 import Sidebar from '../Component/Home_component/Sidebar'
-import Wallpaper from '/valXjjk/src/Images/background/wallpaper.png'
+import Wallpaper from '../Images/background/wallpaper.png'
 
 
 
