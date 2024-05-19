@@ -13,7 +13,7 @@ const App = () => {
           <div className=' absolute top-0 z-50'><Navbar /></div>
         <Routes>
           <Route path="/champions"  element={<ChampList />}/> 
-          <Route path="/"  element={<Home />}/> 
+          <Route path="/"  element={<Home />} index/> 
           <Route path="/queue"  element={<Queue />}/> 
         </Routes>
       </BrowserRouter>
