@@ -3,7 +3,7 @@ import gsap from 'gsap';
 
 const Background = ({ characterName }) => {
   const imgRef = useRef(null);
-  const basePath = '../Images/background/';
+  const basePath = '/valXjjk/src/Images/background/';
 
   useEffect(() => {
     if (imgRef.current) { 

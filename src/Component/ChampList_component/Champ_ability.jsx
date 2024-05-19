@@ -2,7 +2,7 @@ import React, {useEffect, useRef, useState} from 'react'
 import gsap from 'gsap';
 
 const Champ_ability = ({characterName , LastName}) => {
-    const basPath = '../Images/Ability/';
+    const basPath = '/valXjjk/src/Images/Ability/';
     const descRef = useRef(null);
     const [descText, setDescText] = useState(0)
 
