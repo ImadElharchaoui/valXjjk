@@ -2,8 +2,8 @@ import React, {useState} from 'react'
 //Component
 import MinuteSecondCounter from '../Component/Navbar_component/MinuteSecondCounter';
 //currency img 
-import COIN1 from '/src/Images/currency/coin1.png'
-import COIN2 from '/src/Images/currency/coin2.png'
+import COIN1 from '/Images/currency/coin1.png'
+import COIN2 from '/Images/currency/coin2.png'
 //icons
 import { FaPeopleGroup } from "react-icons/fa6";
 import { MdLocalGroceryStore } from "react-icons/md";

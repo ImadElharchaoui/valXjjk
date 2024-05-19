@@ -35,7 +35,7 @@ const ChampList = () => {
       {/*background color based of color img*/}
       <img
                 className='-z-50 absolute scale-[2] blur-xl w-full h-full object-cover'
-                src={'/valXjjk/src/Images/background/' + characterName + '.png'}
+                src={'/Images/background/' + characterName + '.png'}
                 alt=''
       />
       <div className='absolute left-16 top-24 text-black font-banger font-extrabold text-9xl drop-shadow-[0_4px_4px_rgba(255,255,255,1)]' ref={BGName}>
@@ -60,7 +60,7 @@ const ChampList = () => {
           characterArray.map((character, index) => (
             <div key={index} className="text-white mb-2 mx-2 border-2 border-white" 
                 onClick={()=>{setSelected(index)}}>
-              <img className='h-20 w-20' src={`/valXjjk/src/Images/icon/${character}_icon.jpg`} alt="" />
+              <img className='h-20 w-20' src={`/Images/icon/${character}_icon.jpg`} alt="" />
             </div>
           ))
         )}
